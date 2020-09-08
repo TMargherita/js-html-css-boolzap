@@ -1,0 +1,22 @@
+/*struttura base*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg_green {
+  position: fixed;
+  width: 100vw;
+  height: 130px;
+  background-color: #009688;
+  z-index: 1;
+}
+
+main {
+  background-color: #d9d9d9;
+  height: 100vh;
+}
+
+/*finestra chat principale*/
