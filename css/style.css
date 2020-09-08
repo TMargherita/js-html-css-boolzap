@@ -19,17 +19,47 @@ main {
   height: 100vh;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
 /*finestra chat principale*/
 
 .main-wrapper {
   position: relative;
   top: 20px;
   display: flex;
-  direction: column;
-  width: 60%;
+  width: 1200px;
   height: calc(100% - 40px);
   background-color: yellow;
   margin: auto;
   z-index: 1;
   background-color: #eaeaea;
+}
+
+.lista_chat {
+  background-color: pink;
+  height: 100%;
+}
+
+.testo_chat {
+  background-color: purple;
+  height: 100%;
 }
