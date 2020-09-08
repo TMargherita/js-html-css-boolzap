@@ -8,10 +8,10 @@
 
 .bg_green {
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 130px;
   background-color: #009688;
-  z-index: 1;
 }
 
 main {
@@ -20,3 +20,16 @@ main {
 }
 
 /*finestra chat principale*/
+
+.main-wrapper {
+  position: relative;
+  top: 20px;
+  display: flex;
+  direction: column;
+  width: 60%;
+  height: calc(100% - 40px);
+  background-color: yellow;
+  margin: auto;
+  z-index: 1;
+  background-color: #eaeaea;
+}
