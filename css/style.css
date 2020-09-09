@@ -57,9 +57,81 @@ main {
 .lista_chat {
   background-color: pink;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .testo_chat {
   background-color: purple;
   height: 100%;
+  display: flex;
+}
+
+/* header menu sx*/
+
+.top_menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+  width: 100%;
+  background-color: #ededed;
+  padding: 10px 16px;
+}
+
+.utente_wa {
+  flex-grow: 1;
+}
+
+.io {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.status, .new_chat, .menu{
+  color: #919191;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+/* barra notifiche */
+.notifiche {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: #8edafc;
+  padding: 10px 16px;
+}
+
+.fa-bell-slash {
+  color:#8edafc;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.bell {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.text_notifiche {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-grow: 2;
+  padding: 10px 16px;
+}
+
+.ricevi {
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
 }
