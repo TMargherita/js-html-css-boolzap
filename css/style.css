@@ -55,12 +55,10 @@ main {
   background-color: yellow;
   margin: auto;
   z-index: 1;
-  background-color: #eaeaea;
+  background-color: #e5ddd5;
 }
 
 .lista_chat {
-  background-color: pink;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -68,8 +66,9 @@ main {
 
 .testo_chat {
   background-color: purple;
-  height: 100%;
+  height: calc(100% - 72px);
   display: flex;
+  flex-direction: column;
 }
 
 /* header menu sx*/
@@ -77,10 +76,10 @@ main {
 .top_menu {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   height: 60px;
   width: 100%;
-  background-color: #EDEDED;
+  background-color: #e6e6e6;
   padding: 10px 16px;
 }
 
@@ -95,11 +94,11 @@ main {
   height: 40px;
 }
 
-.status, .new_chat, .menu{
+.status, .new_chat, .menu, .allegato, .cerca {
   color: #919191;
   width: 40px;
   height: 40px;
-  padding: 8px;
+  padding: 10px;
 }
 
 /* barra notifiche */
@@ -153,14 +152,15 @@ main {
 .search {
   display: flex;
   align-items: center;
-  background-color: #f6F6F6;
+  justify-content: flex-start;
+  background-color: #f7f7f7;
   height: 50px;
   padding: 10px;
 }
 
 .search input {
-  width: 90%;
-  padding: 5px 10px;
+  width: calc(100% - 40px);
+  height: 30px;
   background-color: #fff;
   border: 1px solid #fff;
 }
@@ -171,6 +171,7 @@ main {
   height: 100%;
   text-align: center;
   line-height: 30px;
+  background-color: #fff;
 }
 
 .search_txt {
@@ -180,26 +181,35 @@ main {
   color: #b3b3b3;
 }
 
-.fa-search {
+.fa-search, .fa-paperclip {
   color: #b3b3b3;
   font-size: 20px;
 }
 
 
 /*lista chat*/
+.chat_view {
+  overflow-y: scroll;
+  height: 100%;
+}
+
 .chat {
   display: flex;
-  align-items: center;
-  height: 70px;
+  height: 72px;
   width: 100%;
-  background-color: #EBEBEB;
   padding: 10px 16px;
+  background-color:#fff;
+  border-top: 0.5px solid #e6e6e6;
+}
+
+.bg_grey {
+  background-color: #d9d9d9;
 }
 
 .icona_contatto {
   overflow: hidden;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -213,19 +223,47 @@ main {
   align-items: flex-start;
   justify-content: center;
   flex-grow: 2;
-  padding: 10px 16px;
+  padding: 10px 15px;
 }
 
 .nome_contatto {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   color: #000;
 }
 
-.status_contatto {
-  font-size: 9px;
-  font-weight: lighter;
+.status_contatto, .ora {
+  font-size: 10px;
+  font-weight: 300;
   color: #9D9D9D;
   text-align: left;
   padding-top: 5px;
+}
+
+.ora {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer {
+  height: 70px;
+  width: 100%;
+  background-color:#fff;
+}
+
+/* finestra chat*/
+.strumenti_chat {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 2;
+}
+
+.message {
+  background-image: url("../img/mine.jpg");
+  background-size: contain;
+  height: calc(100% - 70px);
+  background-repeat: repeat;
 }
