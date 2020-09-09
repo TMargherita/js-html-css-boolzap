@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .bg_green {
   position: fixed;
   top: 0;
@@ -46,7 +50,7 @@ main {
   position: relative;
   top: 20px;
   display: flex;
-  width: 1200px;
+  max-width: 1360px;
   height: calc(100% - 40px);
   background-color: yellow;
   margin: auto;
@@ -101,7 +105,7 @@ main {
 .notifiche {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 70px;
   width: 100%;
   background-color: #8edafc;
   padding: 10px 16px;
@@ -130,8 +134,15 @@ main {
 }
 
 .ricevi {
-  text-decoration: underline;
   font-size: 14px;
   font-weight: bold;
   color: #000;
+}
+
+.attiva {
+  font-size: 12px;
+  font-weight: 400;
+  color: #525252;
+  padding-top: 2px;
+  text-decoration: underline;
 }
