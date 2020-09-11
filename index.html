@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex-layout-attribute.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <title>BoolZap</title>
@@ -168,10 +169,28 @@
                   <span class="menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg></span>
                 </div>
               </div>
-              <div class="message-row">
-                <div class="message sent">
-                  <div class="message-text">Ciao come stai?</div>
-                  <div class="message-time">17:08</div>
+              <div layout="row top-right">
+                <div class="message_sent bubble_green mtop">
+                  <div class="message">
+                    <div class="message-text">Ciao come stai?</div>
+                    <div class="message-time">17:08</div>
+                  </div>
+                </div>
+              </div>
+              <div layout="row top-left">
+                <div class="message_incoming bubble_white">
+                  <div class="message">
+                    <div class="message-text">Ciao come stai?</div>
+                    <div class="message-time">20:35</div>
+                  </div>
+                </div>
+              </div>
+              <div layout="row top-right">
+                <div class="message_sent bubble_green">
+                  <div class="message">
+                    <div class="message-text">Ciao come stai?</div>
+                    <div class="message-time">17:08</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,7 +208,7 @@
                 </div>
                 <div class="column">
                   <div class="invia">
-                    <i class="fas fa-paper-plane icona_invia"></i>
+                    <i class="fas fa-paper-plane send_message"></i>
                   </div>
                 </div>
               </div>
