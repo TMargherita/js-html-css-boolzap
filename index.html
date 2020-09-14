@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+  <!--flexbox-->
     <link rel="stylesheet" href="css/flex-layout-attribute.min.css">
+  <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <!-- google font-->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>BoolZap</title>
   </head>
   <body>
     <header class="bg_green">
     </header>
     <main>
+    <!-- container finestra -->
       <div class="main-wrapper">
         <div class="row">
           <div class="column">
+    <!--lista chat a sx-->
             <div class="lista_chat">
               <div class="top_menu">
                 <div class="utente_wa">
@@ -38,6 +45,7 @@
                   </span>
                 </div>
               </div>
+        <!--barra notifiche-->
               <div class="notifiche">
                 <div class="bell">
                   <i class="far fa-bell-slash"></i>
@@ -47,6 +55,8 @@
                   <span class="attiva">Attiva notifiche desktop</span>
                 </div>
               </div>
+
+        <!--"cerca" nelle chat-->
               <div class="search">
                 <label class="search_label" for="search">
                   <i class="fas fa-search" aria-hidden ="true"></i>
@@ -153,9 +163,12 @@
               </div>
             </div>
           </div>
+      <!--fine lista chat-->
+      <!-- finestra testo chat-->
           <div class="double-column">
             <div class="testo_chat">
-              <div class="top_menu">
+      <!--header testo chat-->
+            <div class="top_menu">
                 <div class="icona_contatto">
                   <img src="img/avatar_1.jpg" class="icon" alt="">
                 </div>
@@ -170,9 +183,9 @@
                 </div>
               </div>
             <!-- chat container -->
-              <div class="chat_active">
-              <div layout="row top-right">
-                <div class="message_sent bubble_green mtop">
+            <div class="chat_active">
+                <div layout="row top-right">
+                  <div class="message_sent  mtop">
                     <div class="message">
                       <div class="message-text">Ciao come stai?</div>
                       <div class="message-time">17:08</div>
@@ -186,32 +199,28 @@
                       <div class="message-time">20:35</div>
                     </div>
                   </div>
-                </div>
-                <div layout="row top-right">
-                  <div class="message_sent bubble_green">
-                    <div class="message">
-                      <div class="message-text">Ciao come stai?</div>
-                      <div class="message-time">17:08</div>
+                  </div>
+                  <div layout="row top-right">
+                    <div class="message_sent bubble_green">
+                      <div class="message">
+                        <div class="message-text">Ciao come stai?</div>
+                        <div class="message-time">17:08</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
             <div class="footer_chat">
-              <div class="row">
-                <div class="column">
-                  <div class="smile">
-                    <i class="emoji far fa-smile"></i>
+              <div class="row bottom">
+                <div class="footer">
+                  <div class="footer-icon">
+                    <i class="far fa-smile emoji" aria-hidden="true"></i>
                   </div>
-                </div>
-                <div class="double-column-invia">
                   <div class="write">
                     <input id="input-message" type="text" placeholder="Scrivi il messaggio">
                   </div>
-                </div>
-                <div class="column">
-                  <div class="invia">
-                    <i class="fas fa-paper-plane send_message"></i>
+                  <div class="footer-icon">
+                    <i class="send-message fa fa-paper-plane" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -220,5 +229,15 @@
         </div>
       </div>
     </main>
+    <div class="templates">
+      <div class="message-row">
+        <div class="message">
+          <i class="fa fa-chevron-down f-right message-options"></i>
+          <div class="message-text"></div>
+          <div class="message-time"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>

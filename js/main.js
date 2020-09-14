@@ -7,15 +7,16 @@ $(document).ready(function() {
       sendMessage();
     }
   );
+});
 
-  $("#input-message").keyup(
+  /*$("#input-message").keyup(
     function(event) {
       if(event.which == 13) {
         sendMessage();
       }
     }
   );
-
+*/
 /*2. cliccando invia il testo viene aggiunto al thread sopra, come messaggio verde*/
 
 
@@ -26,21 +27,16 @@ $(document).ready(function() {
 /*funzioni*/
 /*dichiaro una funzione che riguarda l'invio del messaggio, racchiundendo il css in un template display none, selezionando l'input di testo vado a richiamare il template di messaggio inviato, che clono e richiamo quando viene inserito del testo*/
 function sendMessage() {
-  var inputText= $("#input-message").val();
-    if (inputText != "") {
-      var templateMessage = $(".template .message_sent").clone();
+  var inputText = $("#input-message").val();
 
-      var time = getTime();
+  if (inputText != "") {
+    var templateMessage = $ (".templates .message-row").clone();
 
-      templateMessage.find("message-text").text(".input-message");
-      templateMessage.find("message-time").text("time");
+    templateMessage.find(".message-text").text(inputText);
+    templateMessage.find(".message-text").text("16:16");
+    templateMessage.addClass(".message_sent");
 
-      templateMessage.addClass("sent");
-
-      $(".chat.active").append(templateMessage);
-      setTimeout(cpuMessage, 1000);
-      $("#input-message").val("");
-      var heightChatActive = $(".chat.active").prop("scrollHeight");
-      $(".chats-wrapper").scrollTop(heightChatActive);
-    }
-}
+    $ ("message_sent").append(templateMessage);
+    $ ("#input-message").val();
+  }
+};

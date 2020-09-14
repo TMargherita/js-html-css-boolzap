@@ -277,11 +277,17 @@ main {
   justify-content: flex-end;
   flex-grow: 2;
 }
-
+.chat_window {
+  height: 100%;
+  padding: 50px;
+  display: none;
+}
 .message_sent {
   max-width: 200px;
   background-color: #dcf8c6;
   margin-right: 80px;
+  border-radius: 8px;
+  padding: 5px 20px;
 }
 
 .mtop {
@@ -314,34 +320,28 @@ main {
 .message_incoming {
   margin-left: 80px;
   max-width: 200px;
-}
-
-.bubble_green {
-  background-color: #dcf8c6;
-  border-radius: 8px;
-  padding: 5px 20px;
-}
-
-.bubble_white {
   background-color: #fff;
   border-radius: 8px;
   padding: 5px 20px;
 }
 
-.template {
+.templates {
   display: none;
 }
 
 /*barra messaggi*/
-.footer_chat {
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #F0F0F0;
   height: 70px;
+  padding:15px 0;
+  width: 100%;
 }
 
-.smile, .invia, .write {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
+.footer-icon {
+  padding: 10px 30px;
 }
 
 .emoji {
@@ -353,15 +353,17 @@ main {
 }
 
 .write {
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border-radius: 8px;
   border: 2px solid #fff;
   width: 100%;
   padding: 10px 25px;
-  margin-top: 15px;
 }
 
-.send_message {
+.send-message {
+  cursor: pointer;
   justify-content: center;
   align-items: flex-start;
   font-size: 20px;
